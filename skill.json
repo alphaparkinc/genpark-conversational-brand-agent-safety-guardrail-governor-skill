@@ -1,0 +1,38 @@
+{
+  "name": "genpark-conversational-brand-agent-safety-guardrail-governor-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Conversational brand agent governor enforcing enterprise safety guardrails, deterministic business policy actions, and prompt injection defense.",
+  "author": "genpark",
+  "category": "brand-ai",
+  "tags": [
+    "brand-agent",
+    "safety-guardrails",
+    "prompt-injection-defense",
+    "enterprise-policy",
+    "sierra-ai"
+  ],
+  "inputs": {
+    "enterprise_brand_id": {
+      "type": "string"
+    },
+    "user_message": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "guardrail_evaluation_id": {
+      "type": "string"
+    },
+    "system_prompt_leak_attempt_blocked": {
+      "type": "boolean"
+    },
+    "deterministic_business_action_taken": {
+      "type": "string"
+    },
+    "policy_adherence_score_pct": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
